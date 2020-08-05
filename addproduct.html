@@ -1,0 +1,137 @@
+<!doctype html>
+
+<head>
+    <title>Add Product</title>
+    <style>
+        
+#info{
+	text-align: center;
+}
+.signupbox{
+	width: 370px;
+	height: 550px;
+	background-color: #f1f1f1;
+	margin-top: 40px;
+	margin-left: 36%;
+	padding: 20px;
+}
+.signupbox p{
+	font-size: 20px;
+}
+.signupbox input{
+	width: 100%;
+}
+.signupbox input[type="text"],input[type="number"]{
+	border:none;
+	border-bottom: 1px solid #1c8adb;
+	background: transparent;
+	outline: none;
+	
+	font-size:16px;
+}
+.signupbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height: 40px;
+	margin-top: 30px;
+	background:#1c8adb;
+	color: whitesmoke;
+    font-size: 20px;
+    width: 50%;
+}
+.signupbox input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:#33CCFF;
+	color:#000;
+}
+
+.head {
+            width: 100%;
+            height: 80px;
+            background-color: darkblue;
+        }
+
+        #logo {
+            color: white;
+            padding: 30px;
+            margin-left: 50px;
+        }
+
+        #dash {
+            color: white;
+            float: right;
+            margin-top: -100px;
+            margin-right: 60%;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        #pro {
+            color: white;
+            float: right;
+            margin-top: -100px;
+            margin-right: 45%;
+            text-decoration: none;
+        }
+
+        #welcome {
+            color: white;
+            float: right;
+            margin-top: -80px;
+            margin-right: 22%;
+        }
+
+        #logout {
+            text-decoration: none;
+            color: white;
+            float: right;
+            margin-top: -100px;
+            margin-right: 10%;
+        }
+    </style>
+
+<body>
+    <div class="head">
+        <h2 id="logo">Product Inventory System</h2>
+        <a href="dashboard.html" id="dash">
+            <h2>Dashboard</h2>
+        </a>
+        <a href="products.html" id="pro">
+            <h2>Products</h2>
+        </a>
+        <h2 id="welcome">Welcome,Pavithra</h2>
+        <a href="login.html" id="logout">
+            <h2>Logout</h2>
+        </a>
+    </div>
+
+    <div class="signupbox">
+        <h2 id="info">Product Information</h2>
+        <form>
+
+            <p>Product Id</p>
+            <input type="text" name="pid" placeholder="Enter Product id">
+            <p>Product Name</p>
+            <input type="text" name="pname" placeholder="Enter Product name">
+            <p>Select Category</p>
+            <select name="products" id="products">
+                  <option value="acc">Accesories</option>
+                  <option value="electronics">Electronics</option>
+                  <option value="dairy">Dairy products</option>
+                  <option value="clothes">Clothes</option>
+              </select>
+            <p>Price</p>
+            <input type="number" name="price" placeholder="Enter Product price">
+            <p>Quantity</p>
+            <input type="number" name="qty" placeholder="Enter Product Quantity">
+            <input type="submit" name="save" value="Save product">
+            <button style="background:#1c8adb;height: 40px; border: none;"> <a href="products.html" style="text-decoration: none; font-size: 20px; margin: 40px;color: whitesmoke;">Cancel</a></button>
+
+
+        </form>
+
+
+    </div>
+</body>
+</head>

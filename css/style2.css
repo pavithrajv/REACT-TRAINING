@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding:0;
+	background-image:url(../images/bg1.jpg);
+	background-size:cover;
+	background-position:center;
+	font-family:sans-serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+h2{
+	text-align: center;
+}
+.signupbox{
+	width: 350px;
+	height: 550px;
+	background-color: black;
+	color: whitesmoke;
+	margin-top: 90px;
+	margin-left: 36%;
+	padding: 20px;
+}
+.signupbox p{
+	font-size: 20px;
+}
+.signupbox input{
+	width: 100%;
+}
+.signupbox input[type="text"],input[type="password"]{
+	border:none;
+	border-bottom: 1px solid #1c8adb;
+	background: transparent;
+	outline: none;
+	color:whitesmoke;
+	font-size:16px;
+}
+.signupbox input[type="submit"]{
+	border:none;
+	outline:none;
+	height: 40px;
+	margin-top: 30px;
+	background:#1c8adb;
+	color: whitesmoke;
+	font-size: 20px;
+}
+.signupbox input[type="submit"]:hover
+{
+	cursor:pointer;
+	background:#33CCFF;
+	color:#000;
+}

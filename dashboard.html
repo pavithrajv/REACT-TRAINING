@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript">
+        
+        window.onload = function() {
+        var chart1 = new CanvasJS.Chart("piechart",{
+            theme: "light1", 
+            animationEnabled: true,
+    title :{
+        text: "Sales per category"
+    },
+    data: [{
+	type: "pie",
+        dataPoints : [
+	    {y: 33.45, label: "Dairy products"},
+			{y: 15.31, label: "Daily needs"},
+			{y: 14.06, label: "Electronics"},
+			{y: 10.91, label: "Accesories"},
+			{y: 10.26, label: "Clothes"}
+	]
+    }]
+});
+var chart2 = new CanvasJS.Chart("barchart",{
+    theme: "light1", 
+            animationEnabled: true,
+    title :{
+	text: "Sale history of electronics"
+    },
+    data: [{
+	type: "column",
+	dataPoints : [
+    { label: "powerbank",  y: 30  },
+    { label: "camera", y: 15  },
+	    { label: "headset",  y: 10  },
+	    
+	    { label: "Laptop", y: 25  },
+	    
+	    { label: "Mobile",  y: 20  }
+	]
+    }]
+});
+var chart3 = new CanvasJS.Chart("barchart2",{
+    theme: "light1", 
+            animationEnabled: true,
+    title :{
+	text: "Sale history of accesories"
+    },
+    data: [{
+	type: "column",
+	dataPoints : [
+    { label: "gloves",  y: 30  },
+    { label: "jwellery", y: 15  },
+	    { label: "watches",  y: 10  },
+	    
+	    { label: "shoes", y: 25  },
+	    
+	    { label: "eyeglasses",  y: 20  }
+	]
+    }]
+});
+var chart4 = new CanvasJS.Chart("barchart3",{
+    theme: "light1", 
+            animationEnabled: true,
+    title :{
+	text: "Sale history of dairy products"
+    },
+    data: [{
+	type: "line",
+	dataPoints : [
+    { label: "milk",  y: 30  },
+    { label: "sweets", y: 15  },
+	    { label: "cheese",  y: 10  },
+	    
+	    { label: "butter", y: 25  },
+	    
+	    { label: "panner",  y: 20  }
+	]
+    }]
+});
+var chart5 = new CanvasJS.Chart("barchart4",{
+    theme: "light1", 
+            animationEnabled: true,
+    title :{
+	text: "Sale history of clothes"
+    },
+    data: [{
+	type: "column",
+	dataPoints : [
+    { label: "Jeans",  y: 30  },
+    { label: "FestiveWear", y: 15  },
+	    { label: "Jackets",  y: 10  },
+	    
+	    { label: "Kurtas", y: 25  },
+	    
+	    { label: "Tees",  y: 20  }
+	]
+    }]
+});
+ 
+chart1.render();
+chart2.render();
+chart3.render();
+chart4.render();
+chart5.render();
+        }       
+    </script>
+    <style>
+        .head {
+            width: 100%;
+            height: 80px;
+            background-color: darkblue;
+        }
+
+        #logo {
+            color: white;
+            padding: 30px;
+            margin-left: 50px;
+        }
+
+        #dash {
+            color: white;
+            float: right;
+            margin-top: -100px;
+            margin-right: 60%;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        #pro {
+            color: white;
+            float: right;
+            margin-top: -100px;
+            margin-right: 45%;
+            text-decoration: none;
+        }
+
+        #welcome {
+            color: white;
+            float: right;
+            margin-top: -80px;
+            margin-right: 22%;
+        }
+
+        #logout {
+            text-decoration: none;
+            color: white;
+            float: right;
+            margin-top: -100px;
+            margin-right: 10%;
+        }
+
+        #prod1 {
+            background-color: thistle;
+            margin: 5%;
+            width: 20%;
+            height: 40%;
+            padding: 10px;
+        }
+        .chart1{
+           
+            margin: 50px;
+            width: 28%;
+            height: 400px;
+            float: left;
+        }
+        .chart2{
+            
+            margin-top:50px;
+            width: 28%;
+            height: 400px;
+            float: left;
+        }
+        .chart3{
+            
+            margin: 50px;
+            width: 28%;
+            height: 400px;
+            float: right;
+        }
+        .chart4{
+           
+            margin: 50px;
+            width: 28%;
+            height: 400px;
+            float: left;
+        }
+        .chart5{
+            
+            margin-top:50px;
+            width: 28%;
+            height: 400px;
+            float: left;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="head">
+        <h2 id="logo">Product Inventory System</h2>
+        <a href="#" id="dash">
+            <h2>Dashboard</h2>
+        </a>
+        <a href="products.html" id="pro">
+            <h2>Products</h2>
+        </a>
+        <h2 id="welcome">Welcome,Pavithra</h2>
+        <a href="login.html" id="logout" >
+            <h2>Logout</h2>
+        </a>
+    </div>
+
+    <!--<div id="prod1" style="float: left;">
+        <img src="bg1.jpg" width="100px" height="100px"></img>
+        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3>
+    </div> -->
+
+    <div id="piechart" class="chart1" ></div>
+    <div id="barchart" class="chart2"></div>
+    <div id="barchart2" class="chart3" ></div>
+    <div id="barchart3" class="chart4"></div>
+    <div id="barchart4" class="chart5"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .head {
+      width: 100%;
+      height: 80px;
+      background-color: darkblue;
+    }
+
+    #logo {
+      color: white;
+      padding: 30px;
+      margin-left: 50px;
+    }
+
+    #dash {
+      color: white;
+      float: right;
+      margin-top: -100px;
+      margin-right: 60%;
+      text-decoration: none;
+
+    }
+
+    #pro {
+      color: white;
+      float: right;
+      margin-top: -100px;
+      margin-right: 45%;
+      text-decoration: none;
+      font-style: italic;
+    }
+
+    #welcome {
+      color: white;
+      float: right;
+      margin-top: -80px;
+      margin-right: 22%;
+    }
+
+    #logout {
+      text-decoration: none;
+      color: white;
+      float: right;
+      margin-top: -100px;
+      margin-right: 10%;
+    }
+
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 90%;
+      margin-left: 8%;
+      margin-top: 6%;
+    }
+
+    #customers td,
+    #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    #customers tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+      background-color: #ddd;
+    }
+
+    #customers th {
+      padding: 12px;
+      text-align: center;
+      background-color: darkblue;
+      color: white;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .button3 {
+      background-color: #f44336;
+    }
+
+    .search {
+      width: 100%;
+      position: relative;
+      display: flex;
+    }
+
+    .searchTerm {
+      width: 100%;
+      border: 3px solid lightblue;
+      border-right: none;
+      padding: 5px;
+      height: 20px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color:black;
+      font-size: 20px;
+      text-align: center;
+    }
+    .searchButton {
+      width: 40px;
+      height: 36px;
+      border: 1px solid darkblue;
+      background:darkblue;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .wrap {
+      width: 30%;
+      position: fixed;
+      top: 150px;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+    #add{
+      float: right; 
+      margin-right:80px;
+      border-radius: 30px; 
+      padding: 10px; 
+      border: 2px solid darkblue; 
+      font-size: large; 
+      width: 150px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .add{
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <div class="head">
+      <h2 id="logo">Product Inventory System</h2>
+      <a href="dashboard.html" id="dash">
+        <h2>Dashboard</h2>
+      </a>
+      <a href="products.html" id="pro">
+        <h2>Products</h2>
+      </a>
+      <h2 id="welcome">Welcome,Pavithra</h2>
+      <a href="login.html" id="logout">
+        <h2>Logout</h2>
+      </a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+  <button id="add"><a class="add" href="addproduct.html">Add Product</a></button>
+  <table id="customers">
+    <tr>
+      <th>ID</th>
+      <th>ProductID</th>
+      <th>ProductName</th>
+      <th>Category</th>
+      <th>In Stock</th>
+      <th>Price</th>
+      <th>Action</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>100</td>
+      <td>Product1</td>
+      <td>Category1</td>
+      <td>250</td>
+      <td>25000</td>
+      <td>
+        <button class="button">Edit</button>
+        <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>100</td>
+      <td>Maria Anders</td>
+      <td>Category1</td>
+      <td>Germany</td>
+      <td>2</td>
+      <td>
+        <button class="button">Edit</button>
+        <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>100</td>
+      <td>Maria Anders</td>
+      <td>Category1</td>
+      <td>Germany</td>
+      <td>2</td>
+      <td>
+        <button class="button">Edit</button>
+        <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>100</td>
+      <td>Maria Anders</td>
+      <td>Category1</td>
+      <td>Germany</td>
+      <td>2</td>
+      <td>
+        <button class="button">Edit</button>
+        <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>100</td>
+      <td>Maria Anders</td>
+      <td>Category1</td>
+      <td>Germany</td>
+      <td>2</td>
+      <td>
+        <button class="button">Edit</button>
+        <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>100</td>
+      <td>Maria Anders</td>
+      <td>Category1</td>
+      <td>Germany</td>
+      <td>2</td>
+      <td>
+        <button class="button">Edit</button>
+        <button class="button button3">Delete</button>
+      </td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>100</td>
+      <td>Maria Anders</td>
+      <td>Category1</td>
+      <td>Germany</td>
+      <td>2</td>
+      <td>
+        <button class="button">Edit</button>
+        <button class="button button3">Delete</button>
+      </td>
+    </tr>
+
+  </table>
+  </div>
+</body>
+
+</html>
